@@ -1,0 +1,13 @@
+---
+test1:
+  email: es1212@gmail.com
+  password: 123456
+
+test2:
+  email: li2208@gmail.com
+  password: 987654
+
+test3:
+  email: mo12@gmail.com
+  password: 654321
+...

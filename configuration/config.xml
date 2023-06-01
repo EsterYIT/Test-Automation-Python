@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<environment>
+
+    <!-- General -->
+    <wait_time>10</wait_time>
+
+    <!-- Authorization -->
+    <username>admin</username>
+    <password>admin</password>
+
+    <!-- Web -->
+    <browser>chrome</browser>
+    <url>https://react-redux.realworld.io</url>
+    <!--<url>http://localhost:3000</url> -->
+
+    <execute_app_tools>no</execute_app_tools>
+
+    <!--Mobile-->
+    <mobile_device>Android</mobile_device>
+    <UDID>NJCMY9IN9HEYQKPB</UDID>
+    <app_package>com.shivgadhia.android.ukMortgageCalc</app_package>
+    <app_activity>.MainActivity</app_activity>
+    <appium_server>http://localhost:4723/wd/hub</appium_server>
+    <swipe_duration>200</swipe_duration>
+
+    <!-- DesktopApp -->
+    <app_signature>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</app_signature>
+    <desktop_url>http://localhost:4723</desktop_url>
+
+    <!-- Electron -->
+    <electron_driver_path>C:/python-selenium/FinalProject/Drivers/electrondriver.exe</electron_driver_path>
+    <electron_app_path>C:/Users/user/AppData/Local/Programs/todolist/Todolist.exe</electron_app_path>
+
+    <!-- Database -->
+    <DB_host>localhost</DB_host>
+    <DB_name>automation</DB_name>
+    <DB_username>root</DB_username>
+    <DB_port>3306</DB_port>
+    <DB_password>Es@liron#220894</DB_password>
+
+    <!-- API -->
+    <url_api>http://localhost:3000</url_api>
+
+    <!-- Data Driven Testing -->
+    <DDT_file>C:\python-selenium\FinalProject\DDTFiles\users.csv</DDT_file>
+
+</environment>
