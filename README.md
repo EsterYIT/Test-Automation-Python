@@ -29,7 +29,7 @@ The project is an example of infrastructure for automation testing of different 
 ### List of applications were used in this project:
 
 * Grafana webpage - Web based application
-* UK-Morgagae - Mobile application [[APK]](https://github.com/EsterYIT/Test-Automation-Python/APKs)
+* UK-Morgagae - Mobile application [[APK]](https://github.com/EsterYIT/Test-Automation-Python/tree/main/APKs)
 * typicode - API [[Api Url]](https://jsonplaceholder.typicode.com/)
 * Electron application
 * Windows calculator - Desktop application
@@ -43,7 +43,7 @@ The project is an example of infrastructure for automation testing of different 
 
 
 ### Tests Execution:
-Each of the applications has a few tests for demonstration purpose. These tests can be developed in a very simple way, due to a lot of work with the infrastructure. [[Sanity Tests]](https://github.com/EsterYIT/Test-Automation-Python/test_cases)
+Each of the applications has a few tests for demonstration purpose. These tests can be developed in a very simple way, due to a lot of work with the infrastructure. [[Sanity Tests]](https://github.com/EsterYIT/Test-Automation-Python/tree/main/test_cases)
 
 ### Known Issues:
 Sometimes can be conflicts with some dependencies the applications are using. Hence, the project is for DEMO purpose only. In production it should be divided into several projects.
