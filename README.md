@@ -29,7 +29,7 @@ The project is an example of infrastructure for automation testing of different 
 ### List of applications were used in this project:
 
 * Grafana webpage - Web based application
-* UK-Morgagae - Mobile application [[APK]](https://github.com/EsterYIT/Test-Automation-Python/tree/main/APKs)
+* UK-mortgage_calculator - Mobile application [[APK]](https://github.com/EsterYIT/Test-Automation-Python/tree/main/APKs)
 * typicode - API [[Api Url]](https://jsonplaceholder.typicode.com/)
 * Electron application
 * Windows calculator - Desktop application
