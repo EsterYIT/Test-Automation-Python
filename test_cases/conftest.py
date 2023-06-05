@@ -21,7 +21,7 @@ action2 = None
 db_connector = None
 
 
-@pytest.fixture()
+@pytest.fixture(scope="class")
 def init_web_driver(request):
     if get_data('execute_app_tools').lower() == 'yes':
         globals()['driver'] = get_web_driver()
@@ -30,7 +30,7 @@ def init_web_driver(request):
         globals()['driver'] = EventFiringWebDriver(edriver, EventListener())
     driver = globals()['driver']
     driver.maximize_window()
-    driver.implicitly_wait(int(get_data('waitTime')))
+    driver.implicitly_wait(int(get_data('wait_time')))
     driver.get((get_data('url')))
     request.cls.driver = driver
     globals()['action'] = ActionChains(driver)
@@ -77,7 +77,7 @@ def init_electron_driver(request):
     edriver = get_electron_driver()
     globals()['driver'] = EventFiringWebDriver(edriver, EventListener())
     driver = globals()['driver']
-    driver.implicitly_wait(int(get_data('waitTime')))
+    driver.implicitly_wait(int(get_data('wait_time')))
     request.cls.driver = driver
     globals()['action'] = ActionChains(driver)
     request.cls.action = globals()['action']

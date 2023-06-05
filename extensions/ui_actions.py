@@ -1,6 +1,5 @@
 
 import allure
-from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
 import test_cases.conftest as conf
@@ -23,7 +22,7 @@ class UIActions:
     @staticmethod
     @allure.step('mouse hover on one element')
     def mouse_hover(elem: WebElement):
-        ActionChains(conf.driver).move_to_element(elem).click().perform()
+        conf.action.move_to_element(elem).perform()
 
     @staticmethod
     @allure.step('mouse hover on two elements')

@@ -20,15 +20,14 @@ class TestWeb:
     @allure.title("Test02 - Verify Default User")
     @allure.description("This test verifies the default user")
     def test02_verify_default_users(self):
-        UIActions.mouse_hover(page.web_left_menu.get_server_btn(), page.web_admin_menu_page.get_users_link())
+        UIActions.click(page.web_left_menu.get_server_btn())
         Verifications.number_of_elements(page.web_admin_main_page.get_rows(), 1)
 
     @allure.title("Test03 - Verify New User")
     @allure.description("This test verifies a new user has been added")
     def test03_verify_new_user(self):
-        UIActions.mouse_hover(page.web_left_menu.get_server_btn(), page.web_admin_menu_page.get_users_link())
         WebFlows.create_new_user("bbb", "bb@gmail.com", "ester", "654321")
-        Verifications.verify_text_element(page.web_new_user_page.get_new_user_page(), "User informatio")
+        Verifications.verify_text_element(page.web_new_user_page.get_new_user_page(), "User information")
 
     @allure.title("Test04 - Verify User Deletion")
     @allure.description("This test verifies a user has been deleted")

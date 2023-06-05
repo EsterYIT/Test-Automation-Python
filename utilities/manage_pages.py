@@ -4,7 +4,6 @@ from page_objects.db_conduit.menu_head_page import MenuHead
 from page_objects.db_conduit.sign_in_page import SignInPage
 from page_objects.db_conduit.user_head_page import UserHead
 from page_objects.grafana.admin_main_page import AdminMainPage
-from page_objects.grafana.admin_menu_page import AdminMenuPage
 from page_objects.grafana.left_menu_page import LeftMenuPage
 from page_objects.grafana.login_page import LoginPage
 from page_objects.grafana.main_page import MainPage
@@ -18,7 +17,6 @@ from page_objects.uk_mortgage.main_page import MainPageMortgage
 web_login = None
 web_main = None
 web_left_menu = None
-web_admin_menu_page = None
 web_admin_main_page = None
 web_create_new_user = None
 web_new_user_page = None
@@ -43,7 +41,6 @@ class ManagePages:
         globals()['web_login'] = LoginPage(conf.driver)
         globals()['web_main'] = MainPage(conf.driver)
         globals()['web_left_menu'] = LeftMenuPage(conf.driver)
-        globals()['web_admin_menu_page'] = AdminMenuPage(conf.driver)
         globals()['web_admin_main_page'] = AdminMainPage(conf.driver)
         globals()['web_create_new_user'] = CreateNewUser(conf.driver)
         globals()['web_new_user_page'] = NewUserMainPage(conf.driver)

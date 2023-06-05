@@ -8,4 +8,4 @@ class LeftMenuPage:
         self.driver = driver
 
     def get_server_btn(self):
-        return self.driver.find_element(server_btn[0], server_btn[1])
+        return self.driver.find_element(*server_btn)
