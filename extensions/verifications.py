@@ -9,7 +9,6 @@ class Verifications:
     @allure.step("Verify Text In Element")
     def verify_text_element(elem: WebElement, expected: str):
         common.wait_until_element_is_visible(elem)
-        print("99999999999 ", elem.text)
         assert elem.text == expected
 
     @staticmethod
