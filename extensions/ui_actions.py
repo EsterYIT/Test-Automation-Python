@@ -22,7 +22,7 @@ class UIActions:
     @staticmethod
     @allure.step('mouse hover on one element')
     def mouse_hover(elem: WebElement):
-        conf.action.move_to_element(elem).perform()
+        conf.action.move_to_element(elem).click().perform()
 
     @staticmethod
     @allure.step('mouse hover on two elements')
