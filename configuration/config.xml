@@ -10,7 +10,8 @@
 
     <!-- Web -->
     <browser>chrome</browser>
-    <url>https://react-redux.realworld.io</url>
+    <url>http://localhost:3000</url>
+    <!--https://react-redux.realworld.io-->
     <!--<url>http://localhost:3000</url> -->
 
     <execute_app_tools>no</execute_app_tools>
