@@ -27,7 +27,7 @@ class TestWeb:
     @allure.description("This test verifies a new user has been added")
     def test03_verify_new_user(self):
         WebFlows.create_new_user("bbb", "bb@gmail.com", "ester", "654321")
-        Verifications.verify_text_element(page.web_new_user_page.get_new_user_page(), "User informati")
+        Verifications.verify_text_element(page.web_new_user_page.get_new_user_page(), "User information")
 
     @allure.title("Test04 - Verify User Deletion")
     @allure.description("This test verifies a user has been deleted")
