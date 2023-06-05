@@ -2,14 +2,14 @@ import pytest
 import unittest
 import allure
 from work_flows.web_flows import WebFlows
-from ddt import ddt, data, unpack, file_data
+from ddt import ddt, data, unpack
 import utilities.manage_pages as page
 import utilities.common_ops as common
 from utilities.common_ops import get_data
 from extensions.verifications import Verifications
 
 
-@pytest.mark.usefixtures('init_web_driver')
+@pytest.mark.usefixtures('init_web_driver_ddt')
 @ddt
 class TestWebDDT(unittest.TestCase):
 

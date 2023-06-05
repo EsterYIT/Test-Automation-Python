@@ -40,6 +40,25 @@ def init_web_driver(request):
     driver.quit()
 
 
+@pytest.fixture()
+def init_web_driver_ddt(request):
+    if get_data('execute_app_tools').lower() == 'yes':
+        globals()['driver'] = get_web_driver()
+    else:
+        edriver = get_web_driver()
+        globals()['driver'] = EventFiringWebDriver(edriver, EventListener())
+    driver = globals()['driver']
+    driver.maximize_window()
+    driver.implicitly_wait(int(get_data('wait_time')))
+    driver.get((get_data('url_DB')))
+    request.cls.driver = driver
+    globals()['action'] = ActionChains(driver)
+    request.cls.action = globals()['action']
+    ManagePages.init_web_pages()
+    yield
+    driver.quit()
+
+
 @pytest.fixture(scope='class')
 def init_mobile_driver(request):
     edriver = get_mobile_driver()
@@ -93,7 +112,7 @@ def init_db_connection(request):
     driver = globals()['driver']
     driver.maximize_window()
     driver.implicitly_wait(int(get_data('wait_time')))
-    driver.get((get_data('url')))
+    driver.get((get_data('url_DB')))
     ManagePages.init_web_pages()
     db_connector = mysql.connector.connect(
         host=get_data("DB_host"),

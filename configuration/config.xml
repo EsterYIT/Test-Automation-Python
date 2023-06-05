@@ -11,9 +11,6 @@
     <!-- Web -->
     <browser>chrome</browser>
     <url>http://localhost:3000</url>
-    <!--https://react-redux.realworld.io-->
-    <!--<url>http://localhost:3000</url> -->
-
     <execute_app_tools>no</execute_app_tools>
 
     <!--Mobile-->
@@ -44,5 +41,8 @@
 
     <!-- Data Driven Testing -->
     <DDT_file>C:\python-selenium\FinalProject\DDTFiles\users.csv</DDT_file>
+
+    <!-- DB -->
+    <url_DB>https://react-redux.realworld.io</url_DB>
 
 </environment>
