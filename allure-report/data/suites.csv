@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Jun 05 14:18:49 IDT 2023","Mon Jun 05 14:18:50 IDT 2023","344","test_cases","test_grafana_web","TestWeb","","","Test02 - Verify Default User","This test verifies the default user"
-"passed","Mon Jun 05 14:18:47 IDT 2023","Mon Jun 05 14:18:49 IDT 2023","2142","test_cases","test_grafana_web","TestWeb","","","Test01 - Verify Header","This test login and verifies the main header"
-"passed","Mon Jun 05 14:18:50 IDT 2023","Mon Jun 05 14:18:52 IDT 2023","2230","test_cases","test_grafana_web","TestWeb","","","Test04 - Verify User Deletion","This test verifies a user has been deleted"
-"passed","Mon Jun 05 14:12:39 IDT 2023","Mon Jun 05 14:12:43 IDT 2023","3863","test_cases","test_calculator","TestDesktop","","","Test01 - Verify Addition Command","This test verifies the addition command"
-"passed","Mon Jun 05 14:18:50 IDT 2023","Mon Jun 05 14:18:50 IDT 2023","647","test_cases","test_grafana_web","TestWeb","","","Test03 - Verify New User","This test verifies a new user has been added"
